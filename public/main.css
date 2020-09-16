@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-color:  #486985;
+    font-family: sans-serif;
+}
+
+main h1 {
+    color: #f18400;
+    padding: 10px;
+    text-align: center;
+    font-size: 37px;
+    letter-spacing: 2px;
+}
+.create, .add{
+    max-width: 350px;
+    background-color: #d5dfd2;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 18px;
+}
+
+h2{
+    margin-top: 0;
+    color: #c16a00;
+}
+
+input[type="number"]{
+    max-width: 120px;
+}
+
+form {
+    display:grid;
+    grid-row-gap: 10px;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+input:required{
+    box-shadow: none;
+}

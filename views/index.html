@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link rel="stylesheet" type="text/css" href="../public/main.css">
+	<title>FCC Exercise Tracker</title>
+</head>
+
+<body>
+	<main>
+		<h1>Exercise Tracker</h1>
+		<section class="create">
+			<h2>Create new user</h2>
+			<form class="" action="/api/exercise/new-user" method="post">
+				<label for="username">Username:
+					<input type="text" name="username" value="" placeholder="Enter New User" required>
+				</label>
+				<input type="submit" value="Create a new user">
+			</form>
+		</section>
+		<section class="add">
+			<h2>Add Exercise</h2>
+			<form class="" action="/api/exercise/add" method="post">
+				<label for="userid">User ID:
+					<input type="text" name="userId" value="" placeholder="Enter user ID" required>
+				</label>
+				<label for="description">Description:
+					<input type="text" name="description" value="" placeholder="Enter Desctiption" required>
+				</label>
+				<label for="duration">Duration:
+					<input type="number" name="duration" placeholder="Enter Minutes" required>
+				</label>
+				<label for="date">Date of Exercise:
+					<input type="date" name="date" placeholder="Enter Date (YYYY-MM-DD)">
+				</label>
+				<input type="submit" value="Add an Exercise">
+			</form>
+		</section>
+		<section class="add">
+			<h2>Fetch Log Records</h2>
+			<form class="" action="/api/exercise/log" method="get">
+				<label for="userid">User ID:
+					<input type="text" name="userId" value="" placeholder="Enter user ID" required>
+				</label>
+				<label for="from">From: (optional)
+					<input type="date" name="from">
+				</label>
+				<label for="to">to: (optional)
+					<input type="date" name="to">
+				</label>
+				<label for="limit">Limit: (optional)
+					<input type="number" name="limit" placeholder="Records Limit">
+				</label>
+				<input type="submit" value="Fetch user (ID) records">
+			</form>
+			<br>
+			<form class="" action="/api/exercise/users" method="get">
+				<input type="submit" value="Fetch ALL Records">
+			</form>
+		</section>
+	</main>
+</body>
+
+</html>
