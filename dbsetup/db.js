@@ -1,6 +1,6 @@
 const MONGO_URI = require('./mongo-uri');
 // const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://<user>:<password>@fcc-cluster.repma.mongodb.net/<db>?retryWrites=true&w=majority';
-
+// // Replace above with your <username>, <password> and <db>.
 const mongoose = require('mongoose');
 
 const connectDB = async function(){
