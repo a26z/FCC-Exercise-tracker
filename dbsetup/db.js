@@ -1,5 +1,5 @@
 const MONGO_URI = require('./mongo-uri');
-// const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://<user>:<password>@fcc-cluster.repma.mongodb.net/test?retryWrites=true&w=majority';
+// const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://<user>:<password>@fcc-cluster.repma.mongodb.net/<db>?retryWrites=true&w=majority';
 
 const mongoose = require('mongoose');
 
