@@ -26,6 +26,7 @@ addRouter.post('/', async function(req, res) {
                 'date': exDate
             };
             foundId.log.push(addExercise);
+            foundId.count = foundId.log.length;
             await foundId.save();
 
             let response = {
